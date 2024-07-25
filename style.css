@@ -1,0 +1,220 @@
+*{
+    padding:0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    padding: 10px 5%;
+    width: 100%;
+    align-items: center;
+    color: white;
+}
+header{
+    position: relative;
+}
+.dropdown{
+    display: flex;
+    list-style: none;
+}
+.dropdown li{
+    padding: 0px 20px;
+}
+.doggelbtn{
+    display: none;
+}
+.headerdiv{
+    display: flex;
+}
+.left{
+    width: 80%;
+    background-color:#0f0f0f;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+    flex-wrap: wrap;
+}
+.content,.left img{
+    width: 50%;
+}
+.left h1{
+    font-size: 50px;
+}
+.left button{
+   padding: 10px 20px;
+   background-color: orange;
+   color: white;
+   font-size: 15px;
+   margin-top: 20px;
+}
+.right{
+    width: 20%;
+    background-color: orange;
+}
+.form{
+    background-color: white;
+    padding: 50px 5%;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 6px black;
+}
+.form form{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.form button{
+    padding: 5px 30px;
+   background-color: orange;
+   color: white;
+   font-size: 15px;
+}
+.form input{
+    height: 25px;
+    width: 160px;
+}
+section{
+    padding-top:20vh;
+    text-align: center;
+}
+.heading h1:nth-child(2){
+    color: orange;
+    font-size: 50px;
+    margin: 10px 0px;
+}
+.heading button:nth-child(1){
+    background-color: #0f0f0f;
+}
+.heading button{
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 20px;
+    color:white;
+    border: none;
+    text-transform: uppercase;
+}
+.jobcardcontainer{
+    padding: 50px 15%;
+}
+.jobcardcontainer button{
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    margin: 50px;
+    border: none;
+}
+.jobcards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 200px;
+    background:linear-gradient(rgba(0,0, 0, 0.9)50%,orange 50%) ;
+    color: white;
+    padding: 90px 50px 10px 50px;
+    height: 250px;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 10px 0px;
+    background-size: 100% 200%;
+    background-position: top;
+    transition: all .4s  ease-in-out;
+}
+.cards a{
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    color: orange;
+    width: 100%;
+    text-decoration: none;
+}
+.cards:hover{
+    background-position: bottom;
+}
+.cards:hover a{
+    color: black;
+} 
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+}
+article div{
+    width:50% ;
+    background-color: orange;
+    color: white;
+    padding: 80px 5% 15px 11%;
+}
+article p{
+    margin: 50px 0px;
+    font-family: Corbel;
+}
+article button{
+    padding: 10px 30px;
+    background: #0f0f0f;
+    color: white;
+}
+article h1{
+    font-size: 50px;
+    font-family: Corbel;
+}
+article img{
+    width:50% ;
+    height: 400px;
+}
+footer{
+    display: flex;
+    background-color: #0f0f0f;
+    color: white;
+}
+footer div{
+    width: 25%;
+    padding: 10px 5%;
+}
+@media(max-width:768px){
+    .dropdown{
+        display: none;
+        position: fixed;
+        top:50px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        background-color: rgba(0,0, 0, 0.5);
+    }
+    .doggelbtn{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .content,.left img{
+        width: 100%;
+        padding: 50px 0px;
+    }
+    .form input{
+        height: 25px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    section{
+        padding-top:20vh;
+        text-align: center;
+    }
+    article img,article div{
+        width: 100%;
+    }
+    footer div{
+        width: 50%;
+    }
+}
